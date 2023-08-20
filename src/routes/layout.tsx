@@ -1,5 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import { globalAction$ } from "@builder.io/qwik-city";
+import { BallSelector } from "~/components/ball-selector/ball-selector";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -13,5 +15,15 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
-  return <Slot />;
+  return (
+    <main class="container">
+      <h1>Pizza dough</h1>
+      <BallSelector />
+      <Slot />
+    </main>
+  );
+});
+
+export const useChooseBallCount = globalAction$((data, { redirect }) => {
+  throw redirect(307, `/pizza/${data.balls}`);
 });
