@@ -5,7 +5,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   const loc = useLocation();
   const { balls, label } = getBallData(loc.params.balls);
-  const quantites = computeQuantities(balls);
+  const quantities = computeQuantities(balls);
   return (
     <>
       <h2 class="mb-0">
@@ -14,10 +14,10 @@ export default component$(() => {
       <p class="text-small mb-1">250g dough ball for 12-inch/30cm pizza</p>
       <h3>Quantities</h3>
       <ul>
-        <li>{formatQuantity(quantites.water, "milliliter")} lukewarm water</li>
-        <li>{formatQuantity(quantites.salt, "gram")} salt</li>
-        <li>{formatQuantity(quantites.flour, "gram")} "00" (pasta) flour</li>
-        <li>{formatQuantity(quantites.yeast, "gram")} dried yeast</li>
+        <li>{formatQuantity(quantities.water, "milliliter")} lukewarm water</li>
+        <li>{formatQuantity(quantities.salt, "gram")} salt</li>
+        <li>{formatQuantity(quantities.flour, "gram")} "00" (pasta) flour</li>
+        <li>{formatQuantity(quantities.yeast, "gram")} dried yeast</li>
         <li>Course semolina to dust</li>
       </ul>
       <h3>Method</h3>
