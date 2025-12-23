@@ -22,14 +22,20 @@ export const RouterHead = component$(() => {
         property="og:description"
         content="Calculate the perfect pizza dough recipe."
       />
-      <meta property="og:image" content="/og-image.png" />
+      <meta
+        property="og:image"
+        content="https://pizza-dough.euans.space/og-image.png"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Pizza Dough Calculator" />
       <meta
         name="twitter:description"
         content="Calculate the perfect pizza dough recipe."
       />
-      <meta name="twitter:image" content="/og-image.png" />
+      <meta
+        name="twitter:image"
+        content="https://pizza-dough.euans.space/og-image.png"
+      />
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
