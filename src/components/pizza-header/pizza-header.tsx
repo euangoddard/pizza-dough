@@ -9,7 +9,7 @@ export const PizzaHeader = component$(() => {
         </span>
       </div>
       <h1 class="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-3xl font-bold tracking-tight text-transparent">
-        Pizza Dough Scaler
+        Pizza Dough Balls
       </h1>
     </header>
   );

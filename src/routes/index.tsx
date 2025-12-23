@@ -1,10 +1,10 @@
 import { component$, useStore, useVisibleTask$, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { CookModeToggle } from "~/components/cook-mode-toggle/cook-mode-toggle";
-import { IngredientsList } from "~/components/ingredients-list/ingredients-list";
-import { PizzaHeader } from "~/components/pizza-header/pizza-header";
-import { QuantitySelector } from "~/components/quantity-selector/quantity-selector";
+import { CookModeToggle } from "../components/cook-mode-toggle/cook-mode-toggle";
+import { IngredientsList } from "../components/ingredients-list/ingredients-list";
+import { PizzaHeader } from "../components/pizza-header/pizza-header";
+import { QuantitySelector } from "../components/quantity-selector/quantity-selector";
 
 export default component$(() => {
   const state = useStore({
@@ -92,7 +92,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Pizza Dough Recipe",
+  title: "Pizza Dough Balls",
   meta: [
     {
       name: "description",
