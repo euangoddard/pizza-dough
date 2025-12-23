@@ -14,7 +14,10 @@ export const QuantitySelector = component$<QuantitySelectorProps>(
             Quantity
           </span>
           <span class="text-4xl font-bold text-[#FF6B6B]">
-            {count} <span class="text-lg font-normal text-gray-400">balls</span>
+            {count}{" "}
+            <span class="text-lg font-normal text-gray-400">
+              {count === 1 ? "ball" : "balls"}
+            </span>
           </span>
         </div>
 
